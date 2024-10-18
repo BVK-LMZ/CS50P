@@ -1,0 +1,6 @@
+# Indoor Voices
+# Take input and print it in lowercase
+
+user_input = input("Enter Some Text: ")  #get input 
+user_input = user_input.lower() #make input lowercase
+print(user_input)
