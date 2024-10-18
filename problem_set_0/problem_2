@@ -1,0 +1,6 @@
+# Playback Speed 
+# Add ... to all 'white spaces'
+
+user_input = input("Enter Some Text: ")  #get input 
+user_input = user_input.replace(" ", "...")
+print(user_input)
