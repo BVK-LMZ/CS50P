@@ -1,0 +1,24 @@
+# Math Interpreter
+# A mini calculator that determines math expressions with the eval() func and a (xyz) arg!
+
+
+def main():
+
+    #Get Inputs
+    user_input = input("Enter an expression in the format 'x y z': ")   # Prompt the user for an arithmetic expression
+    x_str, operator, z_str = user_input.split()   # Split the input into three parts: x, operator, z
+    
+
+    #DO  MATH
+    result = eval(f"{float(x_str)} {operator} {float(z_str)}")  # Use eval to calculate the result of the expression
+    # Note: The eval() function evaluates a string as a Python expression.
+
+
+    # Print the result formatted to one decimal place
+    print(f"Result: {result:.1f}")
+
+if __name__ == "__main__":
+    main()
+
+
+
