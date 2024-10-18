@@ -1,0 +1,26 @@
+or
+# Calculate a 20% tip based on user input
+
+# Constants
+TWENTY_PERCENT = 0.20
+
+def calculate_final_bill(base_price_arg):
+    """Calculate the tip based on the base price."""
+    tip = base_price_arg * TWENTY_PERCENT
+    return tip
+
+def get_base_cost():
+    """Prompt the user to input the base price and return it as a float."""
+    base_price = float(input("What is the base price of the bill? "))
+    return base_price
+
+# Get base price from the user
+base_price = get_base_cost()
+
+# Calculate the tip
+tip = calculate_final_bill(base_price)
+
+# Print the result
+print(f"Tip = {tip:.2f}")
+print(f"Final bill = {base_price + tip:.2f}")
+print("Thank you for using this program. Goodbye!")
