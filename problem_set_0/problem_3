@@ -1,0 +1,15 @@
+# Making Faces
+# take some input and return some output in relation that input
+
+#function 
+def the_flipper(string_arg):
+    if (string_arg == ":)"):
+        return ":("
+    elif (string_arg == ":("):
+        return ":)"
+    else:
+        return ":( or :)\n not detected !"
+    
+#main
+user_input = input("Enter Some Text: ")  #get input 
+print(the_flipper(user_input))
