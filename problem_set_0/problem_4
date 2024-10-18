@@ -1,0 +1,21 @@
+# Einstein's Energy Program
+# Calculate E = mc^2 based on user input
+
+speed_of_light = 300_000_000  # Speed of light in meters per second
+
+def calculate_energy(mass, c):
+    """Calculate energy based on mass and the speed of light."""
+    return mass * c ** 2
+
+def get_mass():
+    """Prompt the user to input the mass and return it as a float."""
+    mass = float(input("Enter the mass of an object in kilograms: "))
+    return mass
+
+
+# get mass and calculate EMC^2
+mass = get_mass()# Get user input 
+energy = calculate_energy(mass, speed_of_light) #Calculate energy based on user input and E = mc^2
+
+# Print the result
+print(f"Energy (E) = {energy} joules")
