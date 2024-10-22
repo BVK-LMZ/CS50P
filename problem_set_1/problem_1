@@ -1,1 +1,19 @@
 
+#Deep Thought
+
+# Prompt the user for input and clean it up
+user_input = str(input("What is the answer to the Great Question of Life, the Universe, and Everything? "))
+
+# Clean the input by converting it to lowercase and removing extra spaces
+cleaned_input = user_input.lower().strip()
+
+# Check if the input matches any of the accepted answers
+if cleaned_input == "42":
+    print("Yes")
+elif cleaned_input == "forty-two":
+    print("Yes")
+elif cleaned_input == "forty two":
+    print("Yes")
+else:
+    print("No")
+
