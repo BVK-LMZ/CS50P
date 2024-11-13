@@ -1,0 +1,14 @@
+# Using a simple float determine the time
+
+def main():
+    hours = float(input("Enter the time in 24-hour format as a float (e.g., 7.5 for 7:30): "))
+
+    if 7.0 <= hours <= 8.0:
+        print("It's breakfast time.")
+    elif 12.0 <= hours <= 13.0:
+        print("It's lunch time.")
+    elif 18.0 <= hours <= 19.0:
+        print("It's dinner time.")
+
+if __name__ == "__main__":
+    main()
