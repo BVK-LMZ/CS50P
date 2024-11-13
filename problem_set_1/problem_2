@@ -1,0 +1,25 @@
+# SEINFELD Bank Retention Pledge Script
+
+
+user_input = input("Enter something: ")
+
+# Check if the input is not empty
+if len(user_input) > 0:
+    first_char = user_input[0]  # Get the first character
+
+    # Print the first character for reference
+    print("The first character is:", first_char)
+
+    # Check if the entire input is exactly "hey"
+    if user_input.lower() == "hey":  # Convert to lowercase for case-insensitive comparison
+        print("$100")
+
+    # Check if the input starts with the letter 'h'
+    elif first_char.lower() == 'h':
+        print("The input starts with 'H'!")
+    
+    # If none of the above conditions are met, reward $20
+    else:
+        print("You get $20.")
+else:
+    print("You entered an empty string. Please try again.")
